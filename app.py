@@ -42,8 +42,8 @@ file_object = client.files.create(file=open(filepath, "rb"), purpose="assistants
 # print(assis_id)
 
 # == Hardcoded ids to be used once the first code run is done and the assistant was created
-thread_id = "thread_inGWHWAOfo3yxnwNZCophiXL"
-assis_id = "asst_KPhtBJnaLiJaYqGDqnoHn9oP"
+thread_id = "thread_0VSCNVIEqQYVNVdUQktsYFz1"
+assis_id = "asst_E4QcNLm4OgqZnzfHtwH5n47Q"
 
 # == Step 3. Create a Thread
 message = "What is mining?"
@@ -60,7 +60,7 @@ message = client.beta.threads.messages.create(
 run = client.beta.threads.runs.create(
     thread_id=thread_id,
     assistant_id=assis_id,
-    instructions="Please address the user as Bruce",
+    instructions="Please address the user as sctoy",
 )
 
 

@@ -18,8 +18,8 @@ model = "gpt-4-1106-preview"  # "gpt-3.5-turbo-16k"
 
 
 # == Hardcoded ids to be used once the first code run is done and the assistant was created
-thread_id = "thread_inGWHWAOfo3yxnwNZCophiXL"
-assis_id = "asst_KPhtBJnaLiJaYqGDqnoHn9oP"
+thread_id = "thread_0VSCNVIEqQYVNVdUQktsYFz1"
+assis_id = "asst_E4QcNLm4OgqZnzfHtwH5n47Q"
 
 # Initialize all the session
 if "file_id_list" not in st.session_state:
@@ -150,7 +150,7 @@ if st.session_state.start_chat:
             thread_id=st.session_state.thread_id, role="user", content=prompt
         )
 
-        # Create a run with additioal instructions
+        # Create a run with additional instructions
         run = client.beta.threads.runs.create(
             thread_id=st.session_state.thread_id,
             assistant_id=assis_id,
